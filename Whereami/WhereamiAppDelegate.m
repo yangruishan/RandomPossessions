@@ -7,7 +7,6 @@
 //
 
 #import "WhereamiAppDelegate.h"
-
 #import "WhereamiViewController.h"
 
 @implementation WhereamiAppDelegate

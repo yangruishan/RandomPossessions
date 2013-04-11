@@ -18,6 +18,9 @@
 		A588AB89171163A700C5FC0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A588AB88171163A700C5FC0D /* Default-568h@2x.png */; };
 		A588AB8C171163A700C5FC0D /* WhereamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A588AB8B171163A700C5FC0D /* WhereamiViewController.m */; };
 		A588AB8F171163A700C5FC0D /* WhereamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A588AB8D171163A700C5FC0D /* WhereamiViewController.xib */; };
+		A588AB961711642B00C5FC0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A588AB951711642B00C5FC0D /* CoreLocation.framework */; };
+		A588AB9817116C5F00C5FC0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A588AB9717116C5F00C5FC0D /* MapKit.framework */; };
+		A5A773CF1711A4970017C00A /* HNNPMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A773CE1711A4970017C00A /* HNNPMapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		A588AB8A171163A700C5FC0D /* WhereamiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereamiViewController.h; sourceTree = "<group>"; };
 		A588AB8B171163A700C5FC0D /* WhereamiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereamiViewController.m; sourceTree = "<group>"; };
 		A588AB8E171163A700C5FC0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhereamiViewController.xib; sourceTree = "<group>"; };
+		A588AB951711642B00C5FC0D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A588AB9717116C5F00C5FC0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A5A773CD1711A4970017C00A /* HNNPMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNNPMapPoint.h; sourceTree = "<group>"; };
+		A5A773CE1711A4970017C00A /* HNNPMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNNPMapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A588AB9817116C5F00C5FC0D /* MapKit.framework in Frameworks */,
+				A588AB961711642B00C5FC0D /* CoreLocation.framework in Frameworks */,
 				A588AB73171163A700C5FC0D /* UIKit.framework in Frameworks */,
 				A588AB75171163A700C5FC0D /* Foundation.framework in Frameworks */,
 				A588AB77171163A700C5FC0D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +82,8 @@
 		A588AB71171163A700C5FC0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A588AB9717116C5F00C5FC0D /* MapKit.framework */,
+				A588AB951711642B00C5FC0D /* CoreLocation.framework */,
 				A588AB72171163A700C5FC0D /* UIKit.framework */,
 				A588AB74171163A700C5FC0D /* Foundation.framework */,
 				A588AB76171163A700C5FC0D /* CoreGraphics.framework */,
@@ -87,6 +98,8 @@
 				A588AB82171163A700C5FC0D /* WhereamiAppDelegate.m */,
 				A588AB8A171163A700C5FC0D /* WhereamiViewController.h */,
 				A588AB8B171163A700C5FC0D /* WhereamiViewController.m */,
+				A5A773CD1711A4970017C00A /* HNNPMapPoint.h */,
+				A5A773CE1711A4970017C00A /* HNNPMapPoint.m */,
 				A588AB8D171163A700C5FC0D /* WhereamiViewController.xib */,
 				A588AB79171163A700C5FC0D /* Supporting Files */,
 			);
@@ -177,6 +190,7 @@
 				A588AB7F171163A700C5FC0D /* main.m in Sources */,
 				A588AB83171163A700C5FC0D /* WhereamiAppDelegate.m in Sources */,
 				A588AB8C171163A700C5FC0D /* WhereamiViewController.m in Sources */,
+				A5A773CF1711A4970017C00A /* HNNPMapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +278,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Whereami/Whereami-Prefix.pch";
 				INFOPLIST_FILE = "Whereami/Whereami-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +290,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Whereami/Whereami-Prefix.pch";
 				INFOPLIST_FILE = "Whereami/Whereami-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +315,7 @@
 				A588AB94171163A700C5FC0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
